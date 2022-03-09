@@ -15,7 +15,7 @@
     <td> Link </td>
     <td> Link </td>
     <td><a href="https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-2:-Tech-Talk-5-Data-Ops">TT5</a></td>
-    <td></td>
+    <td> /2 </td>
   </tr>
   
      <tr>
@@ -23,7 +23,7 @@
     <td> Link </td>
     <td> Link </td>
     <td><a href="https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-2:-Tech-Talk-5-Data-Ops">TT5</a></td>
-    <td></td>
+    <td> /2 </td>
   </tr>
   
    <tr>
@@ -31,7 +31,7 @@
     <td> Link </td>
     <td> Link </td>
     <td><a href="https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-2:-Tech-Talk-5-Data-Ops">TT5</a></td>
-    <td></td>
+    <td> /2 </td>
   </tr>
   
   
