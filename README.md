@@ -12,8 +12,8 @@
   
    <tr>
     <td> Matrix </td>
-    <td> Link </td>
     <td> <a href="https://github.com/adhithin/adi-personal/commits/main/Matrix.java"> Link </a> </td>
+    <td> Link </td>
     <td> /2 </td>
     <td> <a href="https://github.com/adhithin/honeycomb"> Link </a> </td>
   </tr>
