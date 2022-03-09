@@ -1,5 +1,6 @@
 # Welcome to Adi's Data Structures Repository 
 ## Week 0 Timebox 
+
 <table>
   <tr>
     <th> Topic  </th>
