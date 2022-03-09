@@ -31,7 +31,7 @@
     <td> Link </td>
     <td> Link </td>
     <td> /2 </td>
-    <td> [Link](https://github.com/adhithin/honeycomb) </td>
+     <td> <a href="https://github.com/adhithin/honeycomb"> Link </a> </td>
   </tr>
   
   
