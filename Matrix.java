@@ -3,7 +3,7 @@ public class Matrix {
 
     // store matrix
     public Matrix(int[][] matrix) {
-        this.matrix = matrix;
+        this.matrix = matrix; // the matrix is being connected to the matrix variable above
     }
 
 
@@ -14,9 +14,11 @@ public class Matrix {
         int x = 0;
 
         //printing the matrix
-        for (int i = 0; i < matrix.length; i++){
+        for (int i = 0; i < matrix.length; i++){ // for loop for the length of the matrix
 
-            for (int j = 0; j < matrix[x].length; j++){ // this is the line that doesn't go through the matrix that doesn't have everythign
+            for (int j = 0; j < matrix[x].length; j++){ // this is the line that doesn't go through the matrix that doesn't have everything
+               // nested for loops, this second one is the width of the matrix
+
                 if (matrix[i][j] == -1){
                     System.out.print("  ");
                 }

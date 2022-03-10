@@ -1,27 +1,50 @@
 public class IntByReference {
     private int value;
 
+    // Hack: create IntByReference, swapToLowHighOrder and toString methods
 
-    // static method that enables me to see numbers swapped by reference (before, after)
-    public static int swapper(int n0, int n1) {
+    public IntByReference(int n){
+        this.value = n;
+    }
 
-        if (n0 > n1){
-            System.out.println(n1 + " " + n0);
+    public IntByReference swapToLowHighOrder(IntByReference x){
+
+
+        IntByReference temp = new IntByReference (value);
+
+        if (x.value < value){
+
+            temp.value = value;
+            value = x.value;
+            x.value = temp.value;
+
         }
 
         else {
-            System.out.println(n0 + " " + n1);
 
+            return x;
         }
 
-        return 0;
+
+        return x;
 
     }
 
+
+    // static method that enables me to see numbers swapped by reference (before, after)
+    public static void swapper(int n0, int n1) {
+        IntByReference a = new IntByReference(n0);
+        IntByReference b = new IntByReference(n1);
+        System.out.println("Before: " + a.value + " " + b.value);
+        a.swapToLowHighOrder(b);  // conditionally build swap method to change values of a, b
+        System.out.println("After: " + a.value + " " + b.value);
+        System.out.println();
+    }
+
     // static main method that provides some simple test cases
-    public static void main(String[] args) {
-        swapper(21, 16);
-        swapper(16, 21);
-        swapper(16, -1);
+    public static void main(String[] ags) {
+        IntByReference.swapper(21, 16);
+        IntByReference.swapper(16, 21);
+        IntByReference.swapper(16, -1);
     }
 }
