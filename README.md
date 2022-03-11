@@ -1,6 +1,9 @@
 # Welcome to Adi's Data Structures Repository 
 ## Week 0 Timebox 
 
+Check out my website: 
+https://adhithin.github.io/adi-personal/
+
 <table>
   <tr>
     <th> Topic  </th>
