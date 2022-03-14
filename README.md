@@ -4,6 +4,8 @@
 Check out my website: 
 https://adhithin.github.io/adi-personal/
 
+Issue + Ticket: https://github.com/adhithin/adi-personal/issues/1
+
 Matrix Code Snippet
 
 for (int i = 0; i < matrix.length; i++){ // for loop for the length of the matrix
