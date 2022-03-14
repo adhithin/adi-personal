@@ -4,6 +4,35 @@
 Check out my website: 
 https://adhithin.github.io/adi-personal/
 
+
+    public IntByReference(int n){
+        this.value = n;
+    }
+
+    public IntByReference swapToLowHighOrder(IntByReference x){
+
+
+        IntByReference temp = new IntByReference (value);
+
+        if (x.value < value){
+
+            temp.value = value;
+            value = x.value;
+            x.value = temp.value;
+
+        }
+
+        else {
+
+            return x;
+        }
+
+
+        return x;
+
+    }
+
+
 <table>
   <tr>
     <th> Topic  </th>
