@@ -8,7 +8,7 @@ Issue + Ticket: https://github.com/adhithin/adi-personal/issues/1
 
 Matrix Code Snippet
 
-for (int i = 0; i < matrix.length; i++){ // for loop for the length of the matrix
+`for (int i = 0; i < matrix.length; i++){ // for loop for the length of the matrix`
 
             for (int j = 0; j < matrix[x].length; j++){ // this is the line that doesn't go through the matrix that doesn't have everything
                // nested for loops, this second one is the width of the matrix
