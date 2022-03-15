@@ -6,6 +6,44 @@ https://adhithin.github.io/adi-personal/
 
 Issue + Ticket: https://github.com/adhithin/adi-personal/issues/1
 
+<table>
+     <tr>
+         <td><a href=".">Home</a></td>
+         <td><a href="code">Code</a></td>
+         <td><a href="review">Review</a></td>
+     </tr>
+ </table>
+ 
+  <h3 id="."> Home </h3>
+<ul>
+  <li>Describe Linked Lists</li>
+  <li>Describe Java Generic T</li>
+  <li>Queue Add and Delete</li>
+  <li>Merge 2 Queues</li>
+  <li>Build Stack and reverse Queue Order</li>
+</ul>
+
+ 
+  <h3 id="code"> Code </h3>
+<ul>
+  <li>Describe Linked Lists</li>
+  <li>Describe Java Generic T</li>
+  <li>Queue Add and Delete</li>
+  <li>Merge 2 Queues</li>
+  <li>Build Stack and reverse Queue Order</li>
+</ul>
+
+ 
+ <h3 id="review"> Review </h3>
+<ul>
+  <li>Describe Linked Lists</li>
+  <li>Describe Java Generic T</li>
+  <li>Queue Add and Delete</li>
+  <li>Merge 2 Queues</li>
+  <li>Build Stack and reverse Queue Order</li>
+</ul>
+
+
 Matrix Code Snippet
 
 `for (int i = 0; i < matrix.length; i++){ // for loop for the length of the matrix`
