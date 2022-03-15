@@ -9,8 +9,8 @@ Issue + Ticket: https://github.com/adhithin/adi-personal/issues/1
 <table>
      <tr>
          <td><a href=".">Home</a></td>
-         <td><a href="code">Code</a></td>
-         <td><a href="review">Review</a></td>
+         <td><a href="#code">Code</a></td>
+         <td><a href="#review">Review</a></td>
      </tr>
  </table>
  
@@ -24,7 +24,7 @@ Issue + Ticket: https://github.com/adhithin/adi-personal/issues/1
 </ul>
 
  
-  <h3 id="code"> Code </h3>
+  <h3 id="#code"> Code </h3>
 <ul>
   <li>Describe Linked Lists</li>
   <li>Describe Java Generic T</li>
@@ -34,7 +34,7 @@ Issue + Ticket: https://github.com/adhithin/adi-personal/issues/1
 </ul>
 
  
- <h3 id="review"> Review </h3>
+ <h3 id="#review"> Review </h3>
 <ul>
   <li>Describe Linked Lists</li>
   <li>Describe Java Generic T</li>
