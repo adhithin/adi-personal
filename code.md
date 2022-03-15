@@ -1,8 +1,58 @@
  <h3 id="week-1">Week 1</h3>
-<ul>
-  <li>Describe Linked Lists</li>
-  <li>Describe Java Generic T</li>
-  <li>Queue Add and Delete</li>
-  <li>Merge 2 Queues</li>
-  <li>Build Stack and reverse Queue Order</li>
-</ul>
+Matrix Code Snippet
+
+`for (int i = 0; i < matrix.length; i++){ // for loop for the length of the matrix`
+
+            for (int j = 0; j < matrix[x].length; j++){ // this is the line that doesn't go through the matrix that doesn't have everything
+               // nested for loops, this second one is the width of the matrix
+
+                if (matrix[i][j] == -1){
+                    System.out.print("  ");
+                }
+
+                else if (matrix[i][j] > 9){
+                    String n = Integer.toHexString(matrix[i][j]);
+                    System.out.print(n);
+                    System.out.print(" ");
+                }
+
+                else {
+                    System.out.print(matrix[i][j]);
+                    System.out.print(" ");
+                }
+
+
+            }
+            System.out.println("");
+            x++;
+        }
+
+IntByReference Code Snippet
+
+
+    public IntByReference(int n){
+        this.value = n;
+    }
+
+    public IntByReference swapToLowHighOrder(IntByReference x){
+
+
+        IntByReference temp = new IntByReference (value);
+
+        if (x.value < value){
+
+            temp.value = value;
+            value = x.value;
+            x.value = temp.value;
+
+        }
+
+        else {
+
+            return x;
+        }
+
+
+        return x;
+
+    }
