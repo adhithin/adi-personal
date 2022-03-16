@@ -15,7 +15,7 @@ public class IntByReference {
         if (x.value < value){
 
             temp.value = value;
-            value = x.value;
+            this.value = x.value;
             x.value = temp.value;
 
         }

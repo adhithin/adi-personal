@@ -17,8 +17,7 @@ public class Matrix {
         for (int i = 0; i < matrix.length; i++){ // for loop for the length of the matrix
 
             for (int j = 0; j < matrix[x].length; j++){ // this is the line that doesn't go through the matrix that doesn't have everything
-               // nested for loops, this second one is the width of the matrix
-
+               // nested for loops
                 if (matrix[i][j] == -1){
                     System.out.print("  ");
                 }
