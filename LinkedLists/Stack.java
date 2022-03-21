@@ -11,7 +11,7 @@ import LinkedLists.ConsoleMethods;
  * 2. "has a" LinkedList for Last In First Out (LIFO) object
  *
  */
-public class Stack<T>
+public class Stack<T> // this is the class, T object is our iterable
 {
     private LinkedList<T> lifo = null;  // last in first out Object of stack
 
@@ -128,7 +128,7 @@ class StackDriver<T> {
             for (T data : objects) {
                 this.stack.push(data);
                 this.count++;
-                System.out.println(stack);
+                System.out.println(stack); // printing the stack for challenge
                 if (DEBUG) ConsoleMethods.println("Push: " + this.stack.peek() + " " + this.stack);
             }
         if (DEBUG) ConsoleMethods.println();
@@ -138,16 +138,16 @@ class StackDriver<T> {
      *  Empty or remove all data objects from the Stack
      *
      */
-    public void emptyStack()
+    public void emptyStack() // here we're emptying the stack
     {
         if (DEBUG) ConsoleMethods.println("Delete " + title);
         while (this.stack.peek() != null) {
             T data = this.stack.pop();
             if (DEBUG) ConsoleMethods.println("Pop: " + data + " " + stack);
-            System.out.println(stack);
+            System.out.println(stack);  // printing the stack for challenge
         }
         if (DEBUG) ConsoleMethods.println();
-        System.out.println(stack);
+        System.out.println(stack); // printing the stack for challenge
     }
 
     /**
@@ -156,7 +156,7 @@ class StackDriver<T> {
      */
     public void printStack()
     {
-        ConsoleMethods.println("Size: " + count);
+        ConsoleMethods.println("Size: " + count); // organize
         ConsoleMethods.println("Top Element: " + stack.peek());
         ConsoleMethods.println("Full Stack: " + stack);
         ConsoleMethods.println();
@@ -174,18 +174,20 @@ class Main {
     public static void main(String[] args) {
         // Create Stack of Words
         StackDriver.DEBUG = false;
+        // the below is a list of String Objects.
         String[] words = new String[]{"seven", "slimy", "snakes", "sallying", "slowly", "slithered", "southward"};
         StackDriver<String> sWords = new StackDriver<>("Words", words);
         sWords.printStack();
-        System.out.println();
-        sWords.emptyStack();
+        System.out.println(); // to organize printing
+        sWords.emptyStack(); // emptyin the stack one obejct at a time
 
         // Create Stack of Integers
         StackDriver.DEBUG = false;
+        // below is a list of string integers, using the Integer Wrapper Class
         Object[] numbers = new Integer[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
         StackDriver<Object> sNums = new StackDriver<>("Integers", numbers );
         sNums.printStack();
-        System.out.println();
+        System.out.println(); // to organize printing
         sNums.emptyStack();
 
 
