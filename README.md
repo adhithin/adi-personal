@@ -1,4 +1,9 @@
 # Welcome to Adi's Data Structures Repository 
+
+## Week 1 Ticket
+
+https://github.com/adhithin/adi-personal/issues/2 
+
 ## Week 0 Timebox 
 
 Check out my website: 
