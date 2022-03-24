@@ -25,9 +25,9 @@ public class Calculator {
 
     private final Map<String, Integer> OPERATORS = new HashMap<>();
     {
-        OPERATORS.put("#", 3);
-        OPERATORS.put("?", 3);
-        OPERATORS.put("^", 3);
+        OPERATORS.put("#", 3); //pyth
+        OPERATORS.put("?", 3); // square
+        OPERATORS.put("^", 3); // power
         OPERATORS.put("*", 3);
         OPERATORS.put("/", 3);
         OPERATORS.put("%", 3);
