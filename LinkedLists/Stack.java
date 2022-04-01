@@ -3,6 +3,7 @@ package LinkedLists;
 
 import LinkedLists.ConsoleMethods;
 
+
 /**
  * Stack: custom implementation
  * @author     John Mortensen
