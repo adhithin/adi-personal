@@ -185,16 +185,34 @@ public class Sorts2 {
 
         Instant begin = Instant.now();    // time capture -- end
 
-        for (int j = 1; j < data.size(); j++)
-        {
-            int temp = elements[j];
-            int possibleIndex = j;
-            while (possibleIndex > 0 && temp < elements[possibleIndex - 1])
-            {
-                elements[possibleIndex] = elements[possibleIndex - 1];
-                possibleIndex--;
+        for(int i=1;i<data.size();i++){
+
+
+            int key = data.get(i);
+
+            for(int j= i-1;j>=0;j--){
+                if(key < data.get(j)){
+                    // Shifting Each Element to its right as key is less than the existing element at current index
+                    data.set(j+1,data.get(j));
+
+                    // Special case scenario when all elements are less than key, so placing key value at 0th Position
+                    if(j==0){
+                        data.set(0, key);
+                    }
+                }
+
+                else {
+                    // Putting Key value after element at current index as Key value is no more less than the existing element at current index
+                    data.set(j+1,key);
+                    break; // You need to break the loop to save un necessary iteration
+                }
+
             }
-            elements[possibleIndex] = temp;
+
+            for (Integer x : data){
+                System.out.print(x);
+            }
+
         }
 
 
@@ -204,9 +222,6 @@ public class Sorts2 {
 
         this.data = data;
 
-        for (Integer a : data){
-            System.out.print(a);
-        }
 
         return data;
 
