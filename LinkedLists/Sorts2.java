@@ -1,9 +1,8 @@
+package LinkedLists;
+
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
-import java.util.Comparator;
-
-import LinkedLists.LinkedList;
 
 public class Sorts2 {
 
@@ -223,9 +222,11 @@ public class Sorts2 {
         this.data = data;
 
 
-        return data;
+        return data;im
 
     }
+
+    public ArrayList<T>
 
 
     //our main driver and main method:
@@ -263,6 +264,23 @@ public class Sorts2 {
         test1.insertSort();
         System.out.println();
         System.out.print("Time Elapsed: " + insertTime);
+
+        //performing code sort on linkedlist data structure
+
+        String[] words = new String[] { "seven", "slimy", "snakes", "sallying", "slowly", "slithered", "southward"};
+        QueueManager<String> qWords = new QueueManager<>("Words", words );
+        System.out.println();
+        System.out.print("Bubble Sort (Linked List): ");
+        qWords.bubbleSort();
+
+        Object[] numbers = new Integer[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        QueueManager<Object> qNums = new QueueManager<>("Integers", numbers );
+
+
+        System.out.println();
+        System.out.print("Bubble Sort (Linked List): ");
+        qNums.bubbleSort();
+
 
 
     }
