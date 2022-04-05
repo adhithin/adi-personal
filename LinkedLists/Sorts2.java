@@ -226,7 +226,7 @@ public class Sorts2 {
 
     }
 
-    //public ArrayList<T>
+    public ArrayList<T>
 
 
     //our main driver and main method:
