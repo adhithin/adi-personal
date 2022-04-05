@@ -1,4 +1,4 @@
-package LinkedLists;
+package src;
 
 import java.time.Duration;
 import java.time.Instant;

@@ -1,4 +1,4 @@
-package LinkedLists;
+package src;
 
 
 import LinkedLists.ConsoleMethods;

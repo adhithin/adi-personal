@@ -1,4 +1,4 @@
-// package com.foo.sort;
+package src;
 
 import java.time.Duration;
 import java.time.Instant;
