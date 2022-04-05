@@ -10,7 +10,7 @@ import java.lang.Math;
 
 // not allowed to import queue or stack
 // this is used by importing the stacks function from the stack code
-import LinkedLists.Stack;
+//import LinkedLists.Stack;
 
 
 public class Calculator {
