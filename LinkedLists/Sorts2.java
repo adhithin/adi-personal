@@ -222,11 +222,11 @@ public class Sorts2 {
         this.data = data;
 
 
-        return data;im
+        return data im;
 
     }
 
-    public ArrayList<T>
+    //public ArrayList<T>
 
 
     //our main driver and main method:
