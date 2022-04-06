@@ -107,8 +107,8 @@ class Driver {
 
       MenuRow[] rows1 = new MenuRow[]{
                 new MenuRow("Back", () -> main(null)),
-                //new MenuRow("Queue", () -> Queue.main(null)),
-                //new MenuRow("Stack", () -> Stack.main(null))
+                new MenuRow("Queue", () -> Queue.main(null)),
+                new MenuRow("Stack", () -> Stack.main(null))
                 //new MenuRow("Merged Queues", () -> MergeQueue.main(null))
         };
       

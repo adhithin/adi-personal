@@ -89,6 +89,29 @@ public class Stack<T> // this is the class, T object is our iterable
         return stackToString.toString();
     }
 
+  public static void main(String[] args) {
+        // Create Stack of Words
+        StackDriver.DEBUG = false;
+        // the below is a list of String Objects.
+        String[] words = new String[]{"seven", "slimy", "snakes", "sallying", "slowly", "slithered", "southward"};
+        StackDriver<String> sWords = new StackDriver<>("Words", words);
+        sWords.printStack();
+        System.out.println(); // to organize printing
+        sWords.emptyStack(); // emptyin the stack one obejct at a time
+
+        // Create Stack of Integers
+        StackDriver.DEBUG = false;
+        // below is a list of string integers, using the Integer Wrapper Class
+        Object[] numbers = new Integer[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        StackDriver<Object> sNums = new StackDriver<>("Integers", numbers );
+        sNums.printStack();
+        System.out.println(); // to organize printing
+        sNums.emptyStack();
+
+
+
+    }
+
 
 }
 
@@ -167,31 +190,3 @@ class StackDriver<T> {
 
 }
 
-class Main {
-    /**
-     * Test Stack functionality using different types of Objects
-     *
-     */
-    public static void main(String[] args) {
-        // Create Stack of Words
-        StackDriver.DEBUG = false;
-        // the below is a list of String Objects.
-        String[] words = new String[]{"seven", "slimy", "snakes", "sallying", "slowly", "slithered", "southward"};
-        StackDriver<String> sWords = new StackDriver<>("Words", words);
-        sWords.printStack();
-        System.out.println(); // to organize printing
-        sWords.emptyStack(); // emptyin the stack one obejct at a time
-
-        // Create Stack of Integers
-        StackDriver.DEBUG = false;
-        // below is a list of string integers, using the Integer Wrapper Class
-        Object[] numbers = new Integer[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-        StackDriver<Object> sNums = new StackDriver<>("Integers", numbers );
-        sNums.printStack();
-        System.out.println(); // to organize printing
-        sNums.emptyStack();
-
-
-
-    }
-}

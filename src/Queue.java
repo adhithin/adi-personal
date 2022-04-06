@@ -86,6 +86,47 @@ public class Queue<T> implements Iterable<T> {
     public Iterator<T> iterator() {
         return new QueueIterator<>(this);
     }
+  public static void main(String[] args)
+    {
+        // Create iterable Queue of Words
+        QueueManager.DEBUG = false;
+        // the below string is a new list of string objects
+        String[] words = new String[] { "seven", "slimy", "snakes", "sallying", "slowly", "slithered", "southward"};
+        QueueManager<String> qWords = new QueueManager<>("Words", words );
+        qWords.printQueue();
+        qWords.deleteList();
+
+        // Create iterable Queue of Integers
+        QueueManager.DEBUG = false;
+        //the below numbers are a list of number objects, using the Integer Wrapper class
+        Object[] numbers = new Integer[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        QueueManager<Object> qNums = new QueueManager<>("Integers", numbers );
+        qNums.printQueue(); // printing the queue
+        qNums.deleteList(); // deleting the queue, and the obejcts in it
+
+        // Create iterable Queue of Mixed types of data.
+        // Remember: what this is doing is just combining two, but not actually mixing.
+        QueueManager.DEBUG = false;
+        QueueManager<Object> qMix = new QueueManager<>("Mixed");
+        qMix.add("Start");
+
+        qMix.add("End");
+
+
+
+
+
+
+
+        // i can't use "get" since this isn't an array.
+
+        qMix.printQueue();
+        qMix.deleteList();
+
+
+
+
+    }
 }
 
 /**
@@ -217,52 +258,5 @@ class QueueManager<T> {
                 System.out.println();
         }
     }
-}
-
-/**
- * Driver Class
- * Tests queue with string, integers, and mixes of Classes and types
- */
-class QueueTester {
-    public static void main(String[] args)
-    {
-        // Create iterable Queue of Words
-        QueueManager.DEBUG = false;
-        // the below string is a new list of string objects
-        String[] words = new String[] { "seven", "slimy", "snakes", "sallying", "slowly", "slithered", "southward"};
-        QueueManager<String> qWords = new QueueManager<>("Words", words );
-        qWords.printQueue();
-        qWords.deleteList();
-
-        // Create iterable Queue of Integers
-        QueueManager.DEBUG = false;
-        //the below numbers are a list of number objects, using the Integer Wrapper class
-        Object[] numbers = new Integer[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-        QueueManager<Object> qNums = new QueueManager<>("Integers", numbers );
-        qNums.printQueue(); // printing the queue
-        qNums.deleteList(); // deleting the queue, and the obejcts in it
-
-        // Create iterable Queue of Mixed types of data.
-        // Remember: what this is doing is just combining two, but not actually mixing.
-        QueueManager.DEBUG = false;
-        QueueManager<Object> qMix = new QueueManager<>("Mixed");
-        qMix.add("Start");
-
-        qMix.add("End");
-
-
-
-
-
-
-
-        // i can't use "get" since this isn't an array.
-
-        qMix.printQueue();
-        qMix.deleteList();
-
-
-
-
-    }
+  
 }
